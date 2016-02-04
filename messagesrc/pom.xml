@@ -8,10 +8,10 @@
         <version>0.1-SNAPSHOT</version>
     </parent>
     
-    <artifactId>singlelang</artifactId>
+    <artifactId>messagesrc</artifactId>
     <packaging>war</packaging>
 
-    <name>website localisation: single language</name>
+    <name>website localisation: message sources</name>
 
     <dependencies>
         <dependency>
@@ -33,6 +33,6 @@
     		<artifactId>javax.servlet-api</artifactId>
 		</dependency>
 
-     </dependencies>
+    </dependencies>
     
 </project>

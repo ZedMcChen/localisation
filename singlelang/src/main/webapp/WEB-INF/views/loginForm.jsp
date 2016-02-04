@@ -3,20 +3,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" media="screen" href="<%=request.getContextPath()%>/resources/css/websitelocalisation.css"/>
 <title>website localisation: single language reference</title>
 </head>
 <body>
-<center>
-<br/><br/><br/>
-<h1>Sign in</h1>
-<br/><br/>
-<form>
-<table>
-<tr><td><label>Username:</label></td><td><input type="text" name="username"/></td></tr>
-<tr><td><label>Password:</label></td><td><input type="password" name="password"/></td></tr>
-<tr><td colspan=2 align="right"><input type="submit" value="Sign in"/></td></tr>
-</table>
+<div id="pageBody">
+
+<legend class="formboxlegend">Sign in</legend>
+<div id="signInBox">
+<form id="signInForm">
+<div><label class="inputLabel">Username:</label> <input class="inputText" type="text" name="username"/></div>
+<div><label class="inputLabel">Password:</label> <input class="inputText" type="password" name="password"/></div>
+<input id="submitBtn" type="submit" value="Sign in"/>
 </form>
-</center>
+</div>
+</div>
 </body>
 </html>
