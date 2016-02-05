@@ -18,6 +18,7 @@
     <modules>
         <module>singlelang</module>
         <module>messagesrc</module>
+        <module>localisedtemplate</module>
     </modules>
 
     <dependencyManagement>
@@ -93,26 +94,35 @@
     </dependencies>
     
     <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                </configuration>
-            </plugin>
-            
-            <!-- We do not need web.xml for these projects -->
-            <plugin>
-            	<groupId>org.apache.maven.plugins</groupId>
-            	<artifactId>maven-war-plugin</artifactId>
-            	<version>2.6</version>
-            	<configuration>
-                	<failOnMissingWebXml>false</failOnMissingWebXml>
-            	</configuration>
-        	</plugin>
-        </plugins>
-    </build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.3</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                    </configuration>
+                </plugin>
+                
+                <!-- We do not need web.xml for these projects -->
+                <plugin>
+                	<groupId>org.apache.maven.plugins</groupId>
+                	<artifactId>maven-war-plugin</artifactId>
+                	<version>2.6</version>
+                	<configuration>
+                    	<failOnMissingWebXml>false</failOnMissingWebXml>
+                	</configuration>
+            	</plugin>
+             
+                <plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>2.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+      </build>
 </project>

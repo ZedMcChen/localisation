@@ -8,10 +8,10 @@
         <version>0.1-SNAPSHOT</version>
     </parent>
     
-    <artifactId>messagesrc</artifactId>
-    <packaging>war</packaging>
+    <artifactId>runall</artifactId>
+    <packaging>pom</packaging>
 
-    <name>website localisation: message sources</name>
+    <name>web site localisation: run all wars</name>
 
     <dependencies>
         <dependency>
@@ -28,31 +28,38 @@
             <artifactId>spring-test</artifactId>
         </dependency>
 
-		<dependency>
-    		<groupId>javax.servlet</groupId>
-    		<artifactId>javax.servlet-api</artifactId>
-		</dependency>
-
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+    
     </dependencies>
     
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-            </plugin>
-                
-            <!-- We do not need web.xml for these projects -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-            </plugin>
-             
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
+        	<groupId>org.apache.tomcat.maven</groupId>
+        	<artifactId>tomcat7-maven-plugin</artifactId>
+		<configuration>
+		    <webapps>
+		        <webapp>
+			    <groupId>com.zedmcchen.website.localisation</groupId>
+			    <artifactId>singlelang</artifactId>
+			    <version>0.1-SNAPSHOT</version>
+			    <type>war</type>
+			    <asWebapp>true</asWebapp>
+			</webapp>
+		        <webapp>
+			    <groupId>com.zedmcchen.website.localisation</groupId>
+			    <artifactId>messagesrc</artifactId>
+			    <version>0.1-SNAPSHOT</version>
+			    <type>war</type>
+			    <asWebapp>true</asWebapp>
+			</webapp>
+		    </webapps>
+		</configuration>
             </plugin>
         </plugins>
 
-      </build>
+    </build>
 </project>
