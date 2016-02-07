@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,13 +9,13 @@
 <body>
 <div id="pageBody">
 
-<legend class="formboxlegend">Sign in</legend>
 <div id="signInBox">
-<form id="signInForm">
-<div><label class="inputLabel">Username:</label> <input class="inputText" type="text" name="username"/></div>
-<div><label class="inputLabel">Password:</label> <input class="inputText" type="password" name="password"/></div>
+<legend class="formboxlegend">Sign in</legend>
+<sf:form id="signInForm"  method="POST" commandName="userAuth">
+<div><label class="inputLabel">Email:</label> <sf:input path="email"/><br/><sf:errors path="email" cssClass="error"/></div>
+<div><label class="inputLabel">Password:</label> <sf:password path="password"/><br/><sf:errors path="password" cssClass="error"/></div>
 <input id="submitBtn" type="submit" value="Sign in"/>
-</form>
+</sf:form>
 </div>
 </div>
 </body>

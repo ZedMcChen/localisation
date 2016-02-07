@@ -17,8 +17,8 @@
     
     <modules>
         <module>singlelang</module>
-        <module>messagesrc</module>
-        <module>localisedtemplate</module>
+        <!-- module>messagesrc</module>
+        <module>localisedtemplate</module -->
     </modules>
 
     <dependencyManagement>
@@ -31,25 +31,31 @@
                 <scope>import</scope>
             </dependency>
             
-			<dependency>
-    			<groupId>javax.servlet</groupId>
-    			<artifactId>javax.servlet-api</artifactId>
-    			<version>3.1.0</version>
-    			<scope>provided</scope>
-			</dependency>
-
-        	<dependency>
-            	<groupId>jstl</groupId>
-            	<artifactId>jstl</artifactId>
-            	<version>1.2</version>
-        	</dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>3.1.0</version>
+                <scope>provided</scope>
+            </dependency>
 
             <dependency>
-            	<groupId>junit</groupId>
-            	<artifactId>junit</artifactId>
-            	<version>4.12</version>
-            	<scope>test</scope>
-        	</dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>5.2.2.Final</version>
+            </dependency>
+
+            <dependency>
+                <groupId>jstl</groupId>
+                <artifactId>jstl</artifactId>
+                <version>1.2</version>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>test</scope>
+            </dependency>
     
         </dependencies>
 
@@ -85,11 +91,6 @@
             <version>1.1.0.Final</version>
         </dependency>
         
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-validator</artifactId>
-            <version>5.2.2.Final</version>
-        </dependency>
     -->        
     </dependencies>
     
@@ -108,13 +109,13 @@
                 
                 <!-- We do not need web.xml for these projects -->
                 <plugin>
-                	<groupId>org.apache.maven.plugins</groupId>
-                	<artifactId>maven-war-plugin</artifactId>
-                	<version>2.6</version>
-                	<configuration>
-                    	<failOnMissingWebXml>false</failOnMissingWebXml>
-                	</configuration>
-            	</plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>2.6</version>
+                    <configuration>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+                </plugin>
              
                 <plugin>
                     <groupId>org.apache.tomcat.maven</groupId>
