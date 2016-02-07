@@ -1,14 +1,54 @@
-#pageBody {font-family:Courier; width: 500px; font-size: 20px}
+#pageBody {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 14em;
+    width: 26em;
+    margin-top: -7em;
+    margin-left: -13em;
+    font-family:Courier;
+    color: #112233; 
+    background-color: #ccddff
+}
 
-.formboxlegend { position: relative; top: 50px; left: 200px}
+#greetingMsg {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-#signInBox {color: #112233; position: relative; top: 80px}
+#langNav {
+    float: right;
+    font-size: 70%
+}
 
 
-.inputLabel {width:50%; float: left; text-align: right}
+#signInBox {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
 
-.inputText {width: 50%; float: left}
+.signInForm .legend {
+    height: 3em
+}
 
+.signInForm .field { padding: 0em; margin:0em; height: 3.5em}
 
-#submitBtn {position: relative; top: 20px; left: 200px}
+.signInForm .field label { display:inline-block; width:10em; margin-left:0em; }
 
+.signInForm .field input { display:inline-block; }
+
+#submitBtn {
+    position: relative; 
+    top: 1em
+}
+
+.error {
+     display: block;
+     color: red
+}
