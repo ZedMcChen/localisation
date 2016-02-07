@@ -5,12 +5,23 @@ on Tomcat 8 :
 
 For comparison, there are four example projects:
 
-1) singlelang: single language referential web page using Spring MVC;
+singlelang: referential web page in single language (English) using Spring MVC;
 
-2) messagesource: internationalisation with Spring MessageSource
+messagesource: internationalisation with Spring MessageSource
 
-3) viewresolver: localisation using locale specific view sources;
+localisedtemplate: localisation using locale specific view sources;
 
-4) fulllocalisation: fully localised Spring MVC with localised DAOs,
+fulllocalisation: fully localised Spring MVC with localised DAOs,
     MessageSource and localised view sources.
 
+
+1) singlelang
+
+This is a referential web page in single language (English). Its implementation is
+pretty straight forward. But please note the following.
+
+i)  The configuration is done entirely in Java through class WebApplicationInitializer;
+    and there is not XML files, not even 'web.xml';
+
+ii) The default @Requestmapping pattern for @Pathvariable "email" truncates at the 
+    first dot (.), a new pattern is defined to get round this problem.

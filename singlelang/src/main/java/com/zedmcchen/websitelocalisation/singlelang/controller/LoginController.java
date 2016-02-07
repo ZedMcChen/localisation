@@ -43,7 +43,7 @@ public class LoginController {
         return "redirect:/hello/" + encode(email, "UTF-8");
     }
 
-    @RequestMapping(value = "/hello/{email}", method=RequestMethod.GET)
+    @RequestMapping(value = "/hello/{email:.+}", method=RequestMethod.GET)
     public String showGreetingsMessage(@PathVariable("email") String email, Model model) {
         model.addAttribute("email", email);
         return "hello";
