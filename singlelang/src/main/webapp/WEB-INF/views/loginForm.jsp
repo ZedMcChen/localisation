@@ -10,11 +10,13 @@
 <div id="pageBody">
 
 <div id="signInBox">
-<legend class="formboxlegend">Sign in</legend>
-<sf:form id="signInForm"  method="POST" commandName="userAuth">
-<div><label class="inputLabel">Email:</label> <sf:input path="email"/><br/><sf:errors path="email" cssClass="error"/></div>
-<div><label class="inputLabel">Password:</label> <sf:password path="password"/><br/><sf:errors path="password" cssClass="error"/></div>
-<input id="submitBtn" type="submit" value="Sign in"/>
+<sf:form class="signInForm"  method="POST" commandName="userAuth">
+<div class="legend">Sign in</div>
+<div class="field"><label for="email">Email:</label> <sf:input path="email"/> <sf:errors path="email" cssClass="error"/></div>
+
+<div class="field"><label for="password">Password:</label> <sf:password path="password"/> <sf:errors path="password" cssClass="error"/></div>
+
+<div class="field"><input id="submitBtn" type="submit" value="Sign in"/></div>
 </sf:form>
 </div>
 </div>

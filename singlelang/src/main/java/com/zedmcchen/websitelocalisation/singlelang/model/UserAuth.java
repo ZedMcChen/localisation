@@ -17,7 +17,6 @@ public class UserAuth {
     @Email
     private String email;
     
-    @NotEmpty
     @Size(min=8, max=256)
     private String password;
 
