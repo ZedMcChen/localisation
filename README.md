@@ -7,7 +7,7 @@ For comparison, there are four example projects:
 
 singlelang: referential web page in single language (English) using Spring MVC;
 
-messagesource: internationalisation with Spring MessageSource
+messagesrc: internationalisation with Spring MessageSource
 
 localisedtemplate: localisation using locale specific view sources;
 
@@ -25,3 +25,8 @@ i)  The configuration is done entirely in Java through class WebApplicationIniti
 
 ii) The default @Requestmapping pattern for @Pathvariable "email" truncates at the 
     first dot (.), a new pattern is defined to get round this problem.
+    
+    
+2) messagesrc:
+
+i) apostrophe got swallowed by Spring for it being considered single quote, so need '' to print apostrophe;
