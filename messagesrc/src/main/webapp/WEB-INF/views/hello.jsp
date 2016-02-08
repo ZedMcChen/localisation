@@ -15,7 +15,7 @@
 </div>
 
 <div id="greetingMsg">
-<span></span><spring:message code="label.greeting"/></span>  ${email}, <spring:message code="label.welcome"/>!
+<span><spring:message code="label.greeting"/></span>  ${email}, <spring:message code="label.welcome"/>!
 </div>
 </div>
 </body>

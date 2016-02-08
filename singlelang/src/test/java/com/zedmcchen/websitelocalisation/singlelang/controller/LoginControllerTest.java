@@ -15,11 +15,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-
 import com.zedmcchen.websitelocalisation.singlelang.controller.LoginController;
 
 /**
@@ -49,7 +44,7 @@ public class LoginControllerTest {
                              .param("email", email)
                              .param("password", "mypassword"))
                     .andExpect(model().errorCount(0))
-                    .andExpect(redirectedUrl("/hello/" + encode(email)));
+                    .andExpect(redirectedUrl("/hello/" + encode(email, "UTF-8")));
     }
     
     @Test
