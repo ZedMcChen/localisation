@@ -1,7 +1,7 @@
 /**
  * Copyright Zhiming Chen 2016
  */
-package com.zhimingchen.websitelocalisation.singlelang.model;
+package com.zhimingchen.websitelocalisation.common.model;
 
 import javax.validation.constraints.Size;
 

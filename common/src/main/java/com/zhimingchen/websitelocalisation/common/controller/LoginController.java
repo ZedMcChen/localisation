@@ -1,7 +1,7 @@
 /**
  * Copyright Zhiming Chen 2016
  */
-package com.zhimingchen.websitelocalisation.singlelang.controller;
+package com.zhimingchen.websitelocalisation.common.controller;
 
 import javax.validation.Valid;
 
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.zhimingchen.websitelocalisation.singlelang.model.UserAuth;
+import com.zhimingchen.websitelocalisation.common.model.UserAuth;
 
 import static  java.net.URLEncoder.encode;
 

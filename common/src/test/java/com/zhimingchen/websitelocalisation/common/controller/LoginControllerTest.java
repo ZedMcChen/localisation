@@ -1,7 +1,7 @@
 /**
  * Copyright Zhiming Chen 2016
  */
-package com.zhimingchen.websitelocalisation.singlelang.controller;
+package com.zhimingchen.websitelocalisation.common.controller;
 
 import static  java.net.URLEncoder.encode;
 
@@ -15,7 +15,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import com.zhimingchen.websitelocalisation.singlelang.controller.LoginController;
+import com.zhimingchen.websitelocalisation.common.controller.LoginController;
 
 /**
  * @author zhiming

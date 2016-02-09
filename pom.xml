@@ -16,9 +16,10 @@
     </properties>
     
     <modules>
+        <module>common</module>
         <module>singlelang</module>
-        <!-- module>messagesrc</module>
-        <module>localisedtemplate</module -->
+        <module>messagesrc</module>
+        <!-- module>localisedtemplate</module -->
     </modules>
 
     <dependencyManagement>
@@ -107,7 +108,7 @@
                     </configuration>
                 </plugin>
                 
-                <!-- We do not need web.xml for these projects -->
+                <!-- web.xml is not wanted for these projects -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
