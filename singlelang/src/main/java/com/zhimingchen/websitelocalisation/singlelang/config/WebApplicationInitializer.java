@@ -21,11 +21,6 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 public class WebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     @Configuration
-    public static class RootConfig {
-        
-    }
-    
-    @Configuration
     @EnableWebMvc
     @ComponentScan("com.zhimingchen.websitelocalisation.singlelang.controller")
     public static class WebConfig extends WebMvcConfigurerAdapter {
@@ -53,7 +48,7 @@ public class WebApplicationInitializer extends AbstractAnnotationConfigDispatche
     
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[] {RootConfig.class};
+        return null;
     }
 
     @Override
