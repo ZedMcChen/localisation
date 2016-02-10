@@ -38,26 +38,33 @@
     <build>
         <plugins>
             <plugin>
-        	<groupId>org.apache.tomcat.maven</groupId>
-        	<artifactId>tomcat7-maven-plugin</artifactId>
-		<configuration>
-		    <webapps>
-		        <webapp>
-			    <groupId>com.zhimingchen.website.localisation</groupId>
-			    <artifactId>singlelang</artifactId>
-			    <version>0.1-SNAPSHOT</version>
-			    <type>war</type>
-			    <asWebapp>true</asWebapp>
-			</webapp>
-		        <webapp>
-			    <groupId>com.zhimingchen.website.localisation</groupId>
-			    <artifactId>messagesrc</artifactId>
-			    <version>0.1-SNAPSHOT</version>
-			    <type>war</type>
-			    <asWebapp>true</asWebapp>
-			</webapp>
-		    </webapps>
-		</configuration>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <webapps>
+                        <webapp>
+                            <groupId>com.zhimingchen.website.localisation</groupId>
+                            <artifactId>singlelang</artifactId>
+                            <version>0.1-SNAPSHOT</version>
+                            <type>war</type>
+                            <asWebapp>true</asWebapp>
+                        </webapp>
+                        <webapp>
+                            <groupId>com.zhimingchen.website.localisation</groupId>
+                            <artifactId>messagesrc</artifactId>
+                            <version>0.1-SNAPSHOT</version>
+                            <type>war</type>
+                            <asWebapp>true</asWebapp>
+                        </webapp>
+                        <webapp>
+                            <groupId>com.zhimingchen.website.localisation</groupId>
+                            <artifactId>localisedtemplate</artifactId>
+                            <version>0.1-SNAPSHOT</version>
+                            <type>war</type>
+                            <asWebapp>true</asWebapp>
+                        </webapp>
+                    </webapps>
+                </configuration>
             </plugin>
         </plugins>
 

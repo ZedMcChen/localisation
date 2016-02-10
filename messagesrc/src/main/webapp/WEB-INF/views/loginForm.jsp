@@ -12,7 +12,7 @@
 <div id="pageBody">
 
 <div id="langNav">
-    <a href="login?lang=en">English</a>|<a href="login?lang=fr">Français</a>|<a href="login?lang=zh_CN">中文</a>
+    <a href="?lang=en_GB">English</a>|<a href="?lang=fr">Français</a>|<a href="?lang=zh_CN">中文</a>
 </div>
 
 <div id="signInBox">
