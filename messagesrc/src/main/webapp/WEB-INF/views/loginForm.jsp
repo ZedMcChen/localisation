@@ -6,7 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" media="screen" href="<%=request.getContextPath()%>/static/css/websitelocalisation.css"/>
-<title><spring:message code="label.title.hello"/></title>
+<title><spring:message code="label.title.signin"/></title>
 </head>
 <body>
 <div id="pageBody">
