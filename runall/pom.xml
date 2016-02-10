@@ -63,6 +63,13 @@
                             <type>war</type>
                             <asWebapp>true</asWebapp>
                         </webapp>
+                        <webapp>
+                            <groupId>com.zhimingchen.website.localisation</groupId>
+                            <artifactId>fullylocalised</artifactId>
+                            <version>0.1-SNAPSHOT</version>
+                            <type>war</type>
+                            <asWebapp>true</asWebapp>
+                        </webapp>
                     </webapps>
                 </configuration>
             </plugin>

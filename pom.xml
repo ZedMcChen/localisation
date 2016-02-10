@@ -20,6 +20,7 @@
         <module>singlelang</module>
         <module>messagesrc</module>
         <module>localisedtemplate</module>
+        <module>fullylocalised</module>
     </modules>
 
     <dependencyManagement>
