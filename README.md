@@ -5,19 +5,6 @@ version 4.2.4.RELEASE on Tomcat 7 and 8.
 
 
 
-To run the code, do the following:
-
-a) At the project root,
-
-$ mvn clean install
-
-b) start tomcat in the runall directory
-
-$ cd runall
-$ mvn clean tomcat7:run
-
-
-
 For comparison, there are four example projects:
 
 singlelang: referential web pages in single language (English) using Spring MVC;
@@ -48,6 +35,12 @@ iv)  Validation error messages are the default ones provided by Spring
      because only the minimum password character length is imposed. This 
      message should be improved. This is done in the project fullylocalised.
     
+v)   To run:
+
+     $ cd singlelang
+     $ mvn clean tomcat7:run
+     
+     Then navigate to http://localhost:8080/singlelang
 
 
 2) messagesrc:
@@ -62,6 +55,13 @@ ii)  In the message mapping, apostrophe gets swallowed up by Spring for it
 iii) No explicit error message keys have been defined for model class UserAuth.
      Instead, Spring generated keys (e.g. login.error.emailRequired, see file 
      message_fr.properties for example) are used.
+    
+iv)  To run:
+
+     $ cd messagesrc
+     $ mvn clean tomcat7:run
+     
+     Then navigate to http://localhost:8080/messagesrc
 
 
 
@@ -83,6 +83,13 @@ iii) The above LocaleViewResolver is then chained with a fallbackViewResolver
      
 iv)  Validation error messages are provided by Spring as no MessageSource is
      explicitly defined.
+    
+v)   To run:
+
+     $ cd localisedtemplate
+     $ mvn clean tomcat7:run
+     
+     Then navigate to http://localhost:8080/localisedtemplate
      
 
 
@@ -99,6 +106,28 @@ ii)  Therefore, to fully localise web contents, both localised templates and
 iii) In a really fully localised MVC, the user locale is passed into 
      controller methods and is used to query backend repositories and to 
      create models.
+    
+iv)  To run:
+
+     $ cd fullylocalised
+     $ mvn clean tomcat7:run
+     
+     Then navigate to http://localhost:8080/fullylocalised
+
+
+
+To run all the code, do the following:
+
+a) At the project root,
+
+$ mvn clean install
+
+b) start tomcat in the runall directory
+
+$ cd runall
+$ mvn clean tomcat7:run
+
+
 
 
 
