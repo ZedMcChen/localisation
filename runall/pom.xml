@@ -43,28 +43,28 @@
                 <configuration>
                     <webapps>
                         <webapp>
-                            <groupId>com.zhimingchen.website.localisation</groupId>
+                            <groupId>com.zhimingchen.localisation</groupId>
                             <artifactId>singlelang</artifactId>
                             <version>0.1-SNAPSHOT</version>
                             <type>war</type>
                             <asWebapp>true</asWebapp>
                         </webapp>
                         <webapp>
-                            <groupId>com.zhimingchen.website.localisation</groupId>
+                            <groupId>com.zhimingchen.localisation</groupId>
                             <artifactId>messagesrc</artifactId>
                             <version>0.1-SNAPSHOT</version>
                             <type>war</type>
                             <asWebapp>true</asWebapp>
                         </webapp>
                         <webapp>
-                            <groupId>com.zhimingchen.website.localisation</groupId>
+                            <groupId>com.zhimingchen.localisation</groupId>
                             <artifactId>localisedtemplate</artifactId>
                             <version>0.1-SNAPSHOT</version>
                             <type>war</type>
                             <asWebapp>true</asWebapp>
                         </webapp>
                         <webapp>
-                            <groupId>com.zhimingchen.website.localisation</groupId>
+                            <groupId>com.zhimingchen.localisation</groupId>
                             <artifactId>fullylocalised</artifactId>
                             <version>0.1-SNAPSHOT</version>
                             <type>war</type>
