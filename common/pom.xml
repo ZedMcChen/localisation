@@ -3,14 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.zhimingchen.website.localisation</groupId>
+        <groupId>com.zhimingchen.localisation</groupId>
         <artifactId>parent</artifactId>
         <version>0.1-SNAPSHOT</version>
     </parent>
     
     <artifactId>common</artifactId>
 
-    <name>website localisation: common stuff</name>
+    <name>localisation: common stuff</name>
 
     <dependencies>
         <dependency>

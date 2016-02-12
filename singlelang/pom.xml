@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.zhimingchen.website.localisation</groupId>
+        <groupId>com.zhimingchen.localisation</groupId>
         <artifactId>parent</artifactId>
         <version>0.1-SNAPSHOT</version>
     </parent>
@@ -11,11 +11,11 @@
     <artifactId>singlelang</artifactId>
     <packaging>war</packaging>
 
-    <name>website localisation: single language</name>
+    <name>localisation: single language</name>
 
     <dependencies>
         <dependency>
-            <groupId>com.zhimingchen.website.localisation</groupId>
+            <groupId>com.zhimingchen.localisation</groupId>
             <artifactId>common</artifactId>
             <version>0.1-SNAPSHOT</version>
         </dependency>
