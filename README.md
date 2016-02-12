@@ -40,7 +40,8 @@ v)   To run:
      $ cd singlelang
      $ mvn clean tomcat7:run
      
-     Then navigate to http://localhost:8080/singlelang
+Then navigate to http://localhost:8080/singlelang
+
 
 
 2) messagesrc:
@@ -61,7 +62,8 @@ iv)  To run:
      $ cd messagesrc
      $ mvn clean tomcat7:run
      
-     Then navigate to http://localhost:8080/messagesrc
+Then navigate to http://localhost:8080/messagesrc
+
 
 
 
@@ -89,7 +91,8 @@ v)   To run:
      $ cd localisedtemplate
      $ mvn clean tomcat7:run
      
-     Then navigate to http://localhost:8080/localisedtemplate
+Then navigate to http://localhost:8080/localisedtemplate
+
      
 
 
@@ -112,7 +115,8 @@ iv)  To run:
      $ cd fullylocalised
      $ mvn clean tomcat7:run
      
-     Then navigate to http://localhost:8080/fullylocalised
+Then navigate to http://localhost:8080/fullylocalised
+
 
 
 
@@ -120,12 +124,12 @@ To run all the code, do the following:
 
 a) At the project root,
 
-$ mvn clean install
+     $ mvn clean install
 
 b) start tomcat in the runall directory
 
-$ cd runall
-$ mvn clean tomcat7:run
+     $ cd runall
+     $ mvn clean tomcat7:run
 
 
 
