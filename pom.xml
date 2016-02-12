@@ -16,7 +16,6 @@
     </properties>
     
     <modules>
-        <module>common</module>
         <module>singlelang</module>
         <module>messagesrc</module>
         <module>localisedtemplate</module>
