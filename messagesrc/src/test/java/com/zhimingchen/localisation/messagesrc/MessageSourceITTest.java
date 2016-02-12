@@ -56,7 +56,7 @@ public class MessageSourceITTest {
 
     @Test
     public void shouldGetCorrectLocale() throws Exception {
-        assertThat(messageSource.getMessage("login.error.emailRequired", null, new Locale("fr")), is("Email est requis"));
+        assertThat(messageSource.getMessage("userauth.error.emailRequired", null, new Locale("fr")), is("Email est requis"));
         assertThat(messageSource.getMessage("label.login", null, new Locale("fr")), is("Connexion"));
     }
     

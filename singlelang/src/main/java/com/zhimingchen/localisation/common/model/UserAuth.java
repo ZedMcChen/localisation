@@ -13,11 +13,11 @@ import org.hibernate.validator.constraints.NotEmpty;
  *
  */
 public class UserAuth {
-    @NotEmpty(message="{userauth.error.emailRequired}")
-    @Email(message="{userauth.error.emailMalformed}")
+    @NotEmpty
+    @Email
     private String email;
     
-    @Size(min=8, message="{userauth.error.passwordTooShort}")
+    @Size(min=8)
     private String password;
 
     public String getEmail() {

@@ -1,11 +1,7 @@
 /**
  * Copyright Zhiming Chen 2016
  */
-package com.zhimingchen.localisation.fullylocalised.controller;
-
-import static java.net.URLEncoder.encode;
-
-import java.io.UnsupportedEncodingException;
+package com.zhimingchen.localisation.messagesrc.controller;
 
 import javax.validation.Valid;
 
@@ -16,7 +12,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.zhimingchen.localisation.fullylocalised.model.UserAuth;
+import com.zhimingchen.localisation.messagesrc.model.UserAuth;
+
+import static  java.net.URLEncoder.encode;
+
+import java.io.UnsupportedEncodingException;
 
 /**
  * @author zhiming
@@ -24,7 +24,7 @@ import com.zhimingchen.localisation.fullylocalised.model.UserAuth;
  */
 
 @Controller
-public class LoginController {
+public class SignInController {
     
     @RequestMapping(value = "/login", method=RequestMethod.GET)
     public String showLoginForm(Model model) {

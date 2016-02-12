@@ -65,7 +65,7 @@ public class MessageSourceITTest {
 
     @Test
     public void shouldGetCorrectMessage() throws Exception {
-        assertThat(messageSource.getMessage("login.error.emailRequired", null, new Locale("fr")), is("Email est requis"));
+        assertThat(messageSource.getMessage("userauth.error.emailRequired", null, new Locale("fr")), is("Email est requis"));
     }
     
     @Test(expected=NoSuchMessageException.class)

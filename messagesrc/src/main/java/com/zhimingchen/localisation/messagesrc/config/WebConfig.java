@@ -14,13 +14,14 @@ import org.springframework.validation.Validator;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
-
-import com.zhimingchen.localisation.common.config.BaseWebConfig;
 
 /**
  * @author zhiming
@@ -28,8 +29,8 @@ import com.zhimingchen.localisation.common.config.BaseWebConfig;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages={"com.zhimingchen.localisation.common.controller"})
-public class WebConfig extends BaseWebConfig {
+@ComponentScan(basePackages={"com.zhimingchen.localisation.messagesrc.controller"})
+public class WebConfig extends WebMvcConfigurerAdapter {
     @Bean
     public ViewResolver viewResolver() {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
@@ -50,7 +51,7 @@ public class WebConfig extends BaseWebConfig {
     @Bean
     public MessageSource messageSource() {
         ReloadableResourceBundleMessageSource source = new ReloadableResourceBundleMessageSource();
-        source.setBasename("/WEB-INF/resources/locales/message");
+        source.setBasename("classpath:/locales/message");
         source.setDefaultEncoding("UTF-8");
         return source;
     }
@@ -78,6 +79,18 @@ public class WebConfig extends BaseWebConfig {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(localeChangeInterceptor());
+    }
+    
+    // enable default handler 
+    @Override
+    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+        configurer.enable();
+    }
+    
+    // static content location
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/static/**").addResourceLocations("/static/");
     }
 }
 

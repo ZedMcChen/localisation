@@ -1,7 +1,7 @@
 /**
  * Copyright Zhiming Chen 2016
  */
-package com.zhimingchen.localisation.common.controller;
+package com.zhimingchen.localisation.messagesrc.controller;
 
 import static  java.net.URLEncoder.encode;
 
@@ -15,19 +15,20 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import com.zhimingchen.localisation.common.controller.LoginController;
+
+import com.zhimingchen.localisation.messagesrc.controller.SignInController;
 
 /**
  * @author zhiming
  *
  */
 
-public class LoginControllerTest {
+public class SignInControllerTest {
 	private MockMvc mockMvc;
 	
 	@Before
 	public void setup() {		
-		LoginController controller = new LoginController();
+		SignInController controller = new SignInController();
 		this.mockMvc = MockMvcBuilders.standaloneSetup(controller).build();
 	}
 	

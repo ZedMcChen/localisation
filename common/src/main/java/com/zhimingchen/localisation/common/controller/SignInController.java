@@ -24,7 +24,7 @@ import java.io.UnsupportedEncodingException;
  */
 
 @Controller
-public class LoginController {
+public class SignInController {
     
     @RequestMapping(value = "/login", method=RequestMethod.GET)
     public String showLoginForm(Model model) {
