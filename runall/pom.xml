@@ -41,6 +41,7 @@
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
+                    <path>/</path>
                     <webapps>
                         <webapp>
                             <groupId>com.zhimingchen.localisation</groupId>

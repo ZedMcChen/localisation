@@ -131,6 +131,9 @@ b) start tomcat in the runall directory
      $ cd runall
      $ mvn clean tomcat7:run
 
+Then navigate to http://localhost:8080
+
+
 
 
 
